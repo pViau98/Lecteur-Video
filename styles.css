@@ -1,0 +1,84 @@
+body {
+    background-color: peachpuff;
+  }
+  
+  .video {
+    width: 100%;
+    animation: rotation 3s linear;
+  }
+  
+  .c-video {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .control {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .barre {
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+  }
+  
+  .progres {
+    height: 10px;
+    background-color: orangered;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn {
+    font-size: 1.5em;
+    border-radius: 4px;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn:active {
+    animation: bounce 0.1s;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:focus {
+    
+  }
+  
+  .pause {
+    color: red;
+  }
+  
+  .play {
+    color: green;
+  }
+  
+  @keyframes bounce {
+    from {transform: translateY(0)}
+    to {transform: translateY(-4px)}
+  }
+  
+  @keyframes rotation {
+    from {transform: rotate(0deg) scale(0)}
+    to {transform: rotate(360deg)}
+  }
